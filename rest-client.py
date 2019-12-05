@@ -10,5 +10,5 @@ estudianteX = unirest.get("http://localhost:4567/rest/estudiantes/" + str(matric
 
 print "Estudiante #1 consultado: \n" + str(estudianteX.body)
 
-crearEstudiante = unirest.post("http://localhost:4567/rest/estudiantes/", headers={ "Accept": "application/json", "Content-Type": "application/json" }, params=json.dumps({ "nombre": "OscarJean", "correo": "oscarjean@practica7.com", "carrera": "ISC" }))
+crearEstudiante = unirest.post("http://localhost:4567/rest/estudiantes/", headers={ "Accept": "application/json", "Content-Type": "application/json" }, params=json.dumps({ "nombre": "Joaquinn", "correo": "balaguer857@pucmm.edu.com", "carrera": "ITT" }))
 print "Estudiante nuevo creado: \n" + str(crearEstudiante.body)
